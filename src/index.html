@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title>Angular1 example - Bookstore</title>
+</head>
+<body ng-include="'app/app.html'">
+  <!-- no need for more markup, body content is replaced with app/app.html template -->
+  <script src="vendor/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('bookstore/app').then(function(app){app.bootstrap()});
+  </script>
+</body>
+</html>
