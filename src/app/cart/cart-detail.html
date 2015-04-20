@@ -1,0 +1,11 @@
+<h3>Shopping Cart</h3>
+<p ng-hide="vm.cart.items.length">No items in your cart</p>
+<ul ng-show="vm.cart.items.length">
+  <li ng-repeat="item in vm.cart.items">
+    <cart-item item="item"></cart-item>
+  </li>
+</ul>
+<section>
+  <strong>Total:</strong>
+  <output>{{vm.cart.total | currency}}</output>
+</section>

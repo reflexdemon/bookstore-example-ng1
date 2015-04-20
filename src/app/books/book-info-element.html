@@ -1,0 +1,7 @@
+<article>
+  <a href="#/books/{{vm.book.slug}}">
+    <h4>{{vm.book.title}} by {{vm.book.author.fullName}}</h4>
+  </a>
+  <p>{{vm.book.description | limitTo:80}} ...</p>
+</article>
+<aside ng-transclude class="actions"></aside>

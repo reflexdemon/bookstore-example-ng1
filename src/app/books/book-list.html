@@ -1,0 +1,11 @@
+<h3>Available Books:</h3>
+<label> Search:
+ <input type="search" placeholder="Book's name" ng-model="search" />
+</label>
+<ol>
+ <li ng-repeat="book in vm.books | filter:{title:search}">
+   <book-info book="book">
+     <add-to-cart-button item="book.item"></add-to-cart-button>
+   </book-info>
+ </li>
+</ol>
