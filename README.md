@@ -83,9 +83,12 @@ angular.module('BooksModule', [])
   .controller(BookDetail.name, BookList);
   .directive(bookPreview.controller.name, bookPreview);
 ```
+### Extra
+While developing the app I ended up creating an `angular-migrate` library with a bunch of ES7 decorators that make ng1 development look next generation.
+I'll test it and try to think of more feature to make it a separate repository.
 
-Code
-----
+About Code
+----------
 This application uses [Babel](https://babeljs.io) from a gulp task to transpile ES6-7 code to ES5 and [jspm](http://jspm.io) for package management.
 
 ###Installing
