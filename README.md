@@ -85,7 +85,7 @@ angular.module('BooksModule', [])
 ```
 ### Extra
 While developing the app I ended up creating an `angular-migrate` library with a bunch of ES7 decorators that make ng1 development look next generation.
-I'll test it and try to think of more feature to make it a separate repository.
+I'll test it and try to think of more features before makign it a separate repository. You can learn more about it in [olanod/angular-migrate](https://github.com/olanod/angular-migrate).
 
 About Code
 ----------
