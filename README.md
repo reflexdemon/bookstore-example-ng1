@@ -1,7 +1,7 @@
 Angular Bookstore Example App
 =============================
 
-Angular 1.x example application written in ES6-7 which is easier to migrate to the next generation frameworks.
+Angular 1.x example application written in ES6-7 which is easier to migrate to the next generation frameworks. Check the running example [here](https://github.com/olanod/bookstore-example-ng1).
 
 Most of the angular Apps are written in a way that will make it hard for migration because they are tightly coupled with the framework, if you want to create something more future proof you'll have to rely more on new standards(ES6 modules, classes, etc.) and less on the angular only components.
 
