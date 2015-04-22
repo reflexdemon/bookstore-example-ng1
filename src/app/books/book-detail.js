@@ -1,13 +1,13 @@
-import {inject} from 'lib/angular-migrate/decorators';
+import {inject, ngName} from 'lib/angular-migrate/decorators';
 import {slugify} from 'lib/text-utils';
 import {Book} from './book-models';
 
 @inject('book')
+@ngName('BookDetail')
 export default
 class BookDetail {
   constructor(book) {
     this.book = book;
-    console.log(book);
   }
 
   @inject('$http','$route')

@@ -13,3 +13,13 @@ export function inject(...deps) {
     }
   }
 }
+
+/**
+ * Decorate classes with an explicit name to allow minification
+ * //TODO: check for a better name and other ways to minify code
+ */
+export function ngName(name) {
+  return function (target) {
+    Object.defineProperty(target, 'ngName', {value: name});
+  }
+}

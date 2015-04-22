@@ -1,12 +1,14 @@
 import {bootstrap as bs} from 'lib/angular-migrate/util';
-import {ngModule} from 'lib/angular-migrate/decorators';
+import {ngModule, inject, ngName} from 'lib/angular-migrate/decorators';
 import BooksModule from 'bookstore/books/books-module'
 import CartModule from 'bookstore/cart/cart-module';
 
 @ngModule([BooksModule, CartModule])
+@ngName('BookStoreApp') // to support minification
+@inject('$rootScope')
 class BookStoreApp {
-  constructor($rootScope) {
-    $rootScope.name = 'Bob';
+  constructor(scope) {
+    scope.name = 'Bob';
   }
 }
 
