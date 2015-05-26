@@ -5,6 +5,9 @@
 <body ng-include="'app/app.html'">
   <!-- no need for more markup, body content is replaced with app/app.html template -->
   <script src="vendor/system.js"></script>
+  <!-- @if NODE_ENV='production' -->
+  <script src="build.js"></script>
+  <!-- @endif -->
   <script src="config.js"></script>
   <script>
     System.import('bookstore/app').then(function(app){app.bootstrap()});

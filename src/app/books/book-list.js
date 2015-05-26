@@ -1,7 +1,8 @@
-import {inject} from 'lib/angular-migrate/decorators';
+import {inject, ngName} from 'lib/angular-migrate/decorators';
 import {Book, Author, BookItem} from './book-models';
 
 @inject('books')
+@ngName('BookList')
 export default
 class BookList {
   constructor(books) {

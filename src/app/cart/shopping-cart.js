@@ -1,3 +1,5 @@
+import {ngName} from 'lib/angular-migrate/decorators';
+
 var privates = new WeakMap(),
     itemInstances = 0;
 
@@ -5,6 +7,7 @@ var privates = new WeakMap(),
  * ShoppingCart service
  * Plain JS class could also be used as a controller
  */
+@ngName('ShoppingCart')
 export class ShoppingCart {
   items = [];
 

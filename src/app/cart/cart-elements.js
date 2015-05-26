@@ -1,4 +1,4 @@
-import {ngDirective, withProperty, inject} from 'lib/angular-migrate/decorators';
+import {ngDirective, withProperty, inject, ngName} from 'lib/angular-migrate/decorators';
 
 @ngDirective({ // like ngModule, always first
   template: '<input type="number" ng-model="vm.item.qtty" />'+
@@ -6,6 +6,7 @@ import {ngDirective, withProperty, inject} from 'lib/angular-migrate/decorators'
 })
 @withProperty('item') // of type CartItem
 @inject('ShoppingCart')
+@ngName('addToCartButton')
 export class AddToCartButton {
   constructor(cart) {
     this.cart = cart;
@@ -20,6 +21,7 @@ export class AddToCartButton {
 })
 @withProperty('item')
 @inject('ShoppingCart')
+@ngName('cartItem')
 export class CartItem {
   constructor(cart) {
     this.cart = cart;

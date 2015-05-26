@@ -1,6 +1,7 @@
-import {inject} from 'lib/angular-migrate/decorators';
+import {inject, ngName} from 'lib/angular-migrate/decorators';
 
 @inject('ShoppingCart')
+@ngName('CartDetail')
 export default
 class CartDetail {
   constructor(cart) {

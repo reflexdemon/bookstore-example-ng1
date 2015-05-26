@@ -8,7 +8,6 @@ System.config({
     ]
   },
   "paths": {
-    "app/*": "app/*.js",
     "bookstore/*": "app/*.js",
     "lib/*": "lib/*.js",
     "github:*": "../vendor/github/*.js",
